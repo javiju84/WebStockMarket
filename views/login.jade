@@ -1,0 +1,54 @@
+extends ./layout.jade
+block content
+  body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse', href='#')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='/') Stock Market
+          .nav-collapse
+            ul.nav
+              li.dropdown
+                a.dropdown-toggle(href='/index', data-toggle='dropdown')
+                  | Login 
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='/login') Login
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | Register 
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='/register') Register
+    .container
+      #login-wraper
+        form.form.login-form
+          legend Sign in
+          .body
+            label Username
+            input(type='text')
+            label Password
+            input(type='password')
+          .footer
+            label.checkbox.inline
+              input#inlineCheckbox1(type='checkbox', value='option1')
+              |  Remember me
+            button.btn.btn-success(type='submit') Login
+            a.btn.btn-danger(href='/register') Registrarse
+    script(src='js/jquery-1.8.3.min.js', type='text/javascript')
+    script(src='js/bootstrap/js/bootstrap.min.js')
+    script(src='js/holder.js')
+    script(src='js/backstretch.min.js')
+    link(rel='stylesheet', href='/css/login.css')
+    script(type='text/javascript').
+      $(document).ready(function() {
+      $.backstretch([
+      "img/bg1.png",
+      "img/bg2.png"
+      ], {duration: 3000, fade: 750});
+      });

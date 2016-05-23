@@ -1,4 +1,4 @@
-extends layout
+extends ./layout.jade
 
 block content
   body
@@ -9,23 +9,23 @@ block content
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.brand('') RWM
+          a.brand('') Stock Market
           .nav-collapse
             ul.nav
               li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                a.dropdown-toggle(href='/index', data-toggle='dropdown')
                   | Login 
                   b.caret
                 ul.dropdown-menu
                   li
-                    a(href='grid6a.html') Login 
+                    a(href='/login') Login 
               li.dropdown
                 a.dropdown-toggle(href='#', data-toggle='dropdown')
                   | Register 
                   b.caret
                 ul.dropdown-menu
                   li
-                    a(href='grid7a.html') Register 
+                    a(href='/register') Register 
     a.scrolltotop(href='#')
       span up
     script(src='js/jquery-1.8.3.min.js', type='text/javascript')
