@@ -9,23 +9,19 @@ block content
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.brand('') Stock Market
-          .nav-collapse
+          a.brand(href='/') Stock Market
+          .nav-collapse(class="pull-right")
             ul.nav
               li.dropdown
                 a.dropdown-toggle(href='/index', data-toggle='dropdown')
-                  | Login 
+                  | Acceso
                   b.caret
                 ul.dropdown-menu
                   li
                     a(href='/login') Login 
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown')
-                  | Register 
-                  b.caret
-                ul.dropdown-menu
                   li
                     a(href='/register') Register 
+              
     a.scrolltotop(href='#')
       span up
     script(src='js/jquery-1.8.3.min.js', type='text/javascript')

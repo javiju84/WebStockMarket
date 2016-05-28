@@ -9,22 +9,17 @@ block content
             span.icon-bar
             span.icon-bar
           a.brand(href='/') Stock Market
-          .nav-collapse
+          .nav-collapse(class="pull-right")
             ul.nav
               li.dropdown
                 a.dropdown-toggle(href='/index', data-toggle='dropdown')
-                  | Login 
+                  | Acceso
                   b.caret
                 ul.dropdown-menu
                   li
-                    a(href='/login') Login
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown')
-                  | Register 
-                  b.caret
-                ul.dropdown-menu
+                    a(href='/login') Login 
                   li
-                    a(href='/register') Register
+                    a(href='/register') Register 
     .container
       #login-wraper
         form.form.login-form
